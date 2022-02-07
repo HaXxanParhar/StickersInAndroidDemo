@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StickersActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl_bottom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_72sdp"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?actionBarSize"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:paddingHorizontal="@dimen/_8sdp"-->
+<!--            android:visibility="visible"-->
+<!--            android:weightSum="5">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_filter"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="@dimen/_12sdp"-->
+<!--                android:src="@drawable/ic_appply_filter" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_adjust"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="@dimen/_12sdp"-->
+<!--                android:src="@drawable/ic_brightness" />-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_stickers"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="@dimen/_12sdp"-->
+<!--                android:src="@drawable/ic_stickers"-->
+<!--                app:tint="@color/white" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_text"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="@dimen/_12sdp"-->
+<!--                android:src="@drawable/ic_text" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_setting"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:padding="@dimen/_12sdp"-->
+<!--                android:src="@drawable/ic_adjust" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_adjust"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:background="@color/app_background"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:paddingHorizontal="@dimen/_8sdp"-->
+<!--            android:visibility="gone"-->
+<!--            android:weightSum="3">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_brightness"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginHorizontal="@dimen/_4sdp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_bright"-->
+<!--                    android:layout_width="@dimen/_16sdp"-->
+<!--                    android:layout_height="@dimen/_16sdp"-->
+<!--                    android:src="@drawable/ic_bright" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_8sdp"-->
+<!--                    android:fontFamily="@font/metropolis_medium"-->
+<!--                    android:text="Brightness"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_contrast"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginHorizontal="@dimen/_4sdp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_16sdp"-->
+<!--                    android:layout_height="@dimen/_16sdp"-->
+<!--                    android:src="@drawable/ic_contrast" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_8sdp"-->
+<!--                    android:fontFamily="@font/metropolis_medium"-->
+<!--                    android:text="Contrast"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_saturation"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginHorizontal="@dimen/_4sdp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_16sdp"-->
+<!--                    android:layout_height="@dimen/_16sdp"-->
+<!--                    android:src="@drawable/ic_saturation" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_8sdp"-->
+<!--                    android:fontFamily="@font/metropolis_medium"-->
+<!--                    android:text="Saturation"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_warmth"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginHorizontal="@dimen/_4sdp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="@dimen/_16sdp"-->
+<!--                    android:layout_height="@dimen/_16sdp"-->
+<!--                    android:src="@drawable/ic_hue" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_8sdp"-->
+<!--                    android:fontFamily="@font/metropolis_medium"-->
+<!--                    android:text="Warmth"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_10ssp" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/rl_slider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/app_background"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="gone">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_slider"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_8sdp"-->
+<!--                android:fontFamily="@font/metropolis_medium"-->
+<!--                android:text="50"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_13ssp" />-->
+
+
+<!--            <com.google.android.material.slider.Slider-->
+<!--                android:id="@+id/slider"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:stepSize="1.0"-->
+<!--                android:value="50.0"-->
+<!--                android:valueFrom="0.0"-->
+<!--                android:valueTo="100.0"-->
+<!--                app:thumbColor="@color/white"-->
+<!--                app:thumbRadius="@dimen/_10sdp"-->
+<!--                app:thumbStrokeColor="@color/app_color"-->
+<!--                app:thumbStrokeWidth="@dimen/_3sdp"-->
+<!--                app:trackColorActive="@color/white"-->
+<!--                app:trackColorInactive="@color/grey" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_filters"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_72sdp"-->
+<!--            android:background="@color/app_background"-->
+<!--            android:visibility="gone"-->
+<!--            tools:listitem="@layout/design_filter" />-->
+
+<!--    </RelativeLayout>-->
+
+
+</RelativeLayout>
